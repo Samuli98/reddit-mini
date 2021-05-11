@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --orangered: #FF4500;
+    --yellow: #FF8717;
+    --spacecadet: #2A324B;
+    --white: #FCFCFC;
+    --green: #79B791;
+    --light: #F5F5F5;
+    --gainsboro: #E0E0E0;
+    --jet: #2F2F2F;
+    --shadow: rgba(47, 47, 47, 0.1);
+    --black: #0A0A0A;
+    --header: 'Montserrat', sans-serif;
+    --title: 'Nunito Sans', sans-serif;
+    --body: 'Libre Franklin', sans-serif;
+    --nsfw: blur(1.5em);
+}
+
+body {
+    font-family: var(--body);
+    width: 75%;
+    margin: 5% auto;
+    background-color: var(--light);
+    color: var(--black);
+}
+
+a {
+    color: var(--orangered)
+}
+
+h1 {
+    font-family: var(--header);
+    text-align: center;
+    font-weight: 900;
+}
+
+h1 span {
+    color: var(--orangered);
+}
+
+header img {
+    display: block;
+    margin: 0% auto;
+    height: 75px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+#reddit-sorting {
+    width: 50%;
+    min-width: 100px;
+    max-width: 250px;
+    margin: 5% auto;
+    text-align: center;
+}
+
+#reddit-sorting ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+
+}
+
+#reddit-sorting img {
+    height: 42px;
+    width: auto;
+}
+
+#subreddit-info {
+    font-family: var(--title);
+    text-align: center;
+    padding: 5% 20% 8%;
+}
+
+.nsfw {
+    background-color: var(--orangered);
+    color: var(--light);
+}
+
+.sfw {
+    background-color: var(--spacecadet);
+    color: var(--light);
+}
+
+#subreddit-info .description {
+    font-size: 1.6em;
+}
+
+#subreddit-info h1 {
+    font-size: 2em;
+}
+
+#subreddit-info #nsfw {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-weight: 900;
+    color: var(--light);
+}
+
+#subreddit-info .active-users {
+    margin-top: 5%;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+#post-list {
+    width: 66%;
+    margin: 5% auto;
+}
+
+h2 {
+    font-family: var(--title);
+    font-size: 1.4em;
+    font-weight: 900;
+}
+
+#searchbar {
+    text-align: center;
+    margin: 2%;
+    color: var(--jet);
+}
+
+.search {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.search input[type=search] {
+    padding: 8px 14px;
+    border: 0px solid;
+    background: var(--gainsboro);
+}
+
+#searchbar label {
+    display: none;
+}
+
+#searchbar button {
+    background-color: var(--orangered);
+    border: 2px solid var(--orangered);
+    color: var(--white);
+    position: relative;
+    left: -8px;
+    padding: 6px 12px;
+}
+
+#searchbar button:hover {
+    background-color: var(--yellow);
+    border: 2px solid var(--yellow);
+}
+
+#search-term {
+    color: var(--orangered);
+    font-weight: 800;
+}
+
+.searching {
+    margin: 8% auto;
+    text-align: center;
+}
+
+.search-results {
+    width: 66%;
+    margin: auto;
+}
+
+.search-post {
+    margin: 2%;
+    background-color: var(--white);
+    padding: 2%;
+    box-shadow: 0 1em 1em var(--shadow);
+}
+
+.search-post a {
+    color: var(--spacecadet);
+}
+
+.loading {
+    width: 50%;
+    margin: 25% auto;
+    text-align: center;
+    text-transform: lowercase;
+    font-weight: 300;
+    color: var(--jet);
+}
+
+.error-page {
+    width: 66%;
+    margin: 10% auto;
+    text-align: center;
+}
+
+.error-page h1 {
+    font: var(--header);
+    font-size: 1.6em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.error-page .error-code {
+    color: var(--orangered);
+}
+
+
+@media only screen and (max-width: 800px) {
+    header {
+        margin: 7% auto;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    #searchbar {
+        width: 100%;
+        margin: auto;
+    }
+
+    #reddit-sort {
+        width: 75%;
+        margin: auto;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    #post-list {
+        width: 95%;
+        margin: 5% auto;
+    }
+}

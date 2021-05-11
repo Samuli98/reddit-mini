@@ -1,0 +1,135 @@
+@import '../../App.css';
+
+.post-preview {
+    margin: 2% auto;
+    padding: 4% 6%;
+    max-width: 750px;
+    background-color: var(--white);
+    box-shadow: 0em 1em 0.7em var(--shadow);
+}
+
+.post-preview .media {
+    margin-bottom: 3%;
+}
+
+.post-preview h2 {
+    font: var(--title);
+    font-weight: 900;
+    font-size: 1.4em;
+}
+
+.nsfw-image img {
+    filter: var(--nsfw);
+}
+
+.sticky {
+    width: 100;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--green);
+    color: var(--light);
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1%;
+    margin-bottom: 3%;
+}
+
+.post-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.title-text {
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-top: -1.4em;
+}
+
+.title-text a {
+    color: var(--spacecadet);
+    text-decoration: none;
+}
+
+.title-text a:hover {
+    color: var(--orangered);
+}
+
+.url-info {
+    margin-top: -0.5em;
+    color: var(--jet)
+}
+
+.url-info a{
+    font-weight: 700;
+}
+
+.url-info a:hover {
+    color: var(--yellow);
+}
+
+.domain {
+    margin-top: 0.2em;
+    color: var(--jet);
+}
+
+.post-preview img {
+    width: 100%;
+    height: auto;
+    margin: 2% auto;
+}
+
+.comments-score {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--jet);
+    margin: 6% 0 3% 0;
+}
+
+.comments-score span {
+    font: var(--title);
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.comments-score a {
+    color: var(--spacecadet);
+}
+
+.comments-score a:hover {
+    color: var(--orangered);
+    text-decoration: none;
+}
+
+.comments-score .score {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: var(--orangered);
+}
+
+.post-preview-thumbnail {
+    margin-right: 5%;
+}
+
+.post-preview-thumbnail img {
+    height: 128px;
+    width: 128px;
+    object-fit: cover;
+}
+
+.subreddit {
+    color:var(--yellow);
+}
+
+.body {
+    font: var(--body);
+    text-align: left;
+}
+
+@media only screen and (max-width: 800px) {
+    .post-preview-thumbnail {
+        display: none;
+    }
+
+}
